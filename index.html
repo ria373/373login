@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ログインページ</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .login-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      width: 200px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="login-container">
+  <h1>ログイン</h1>
+  <input type="text" id="username" placeholder="ユーザー名">
+  <input type="password" id="password" placeholder="パスワード">
+  <button onclick="login()">ログイン</button>
+</div>
+
+<script>
+function login() {
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+
+  // ここでユーザー名とパスワードを検証
+  if (username === "testuser" && password === "testpassword") {
+    // ログイン成功
+    window.location.href = "https://www.example.com"; // 遷移先URL
+  } else {
+    // ログイン失敗
+    alert("ユーザー名またはパスワードが間違っています。");
+  }
+}
+</script>
+
+</body>
+</html>
