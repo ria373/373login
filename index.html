@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ログインページ</title>
+  <title>RIa373 loginPage</title>
   <style>
     body {
       font-family: sans-serif;
@@ -51,10 +51,10 @@
 <body>
 
 <div class="login-container">
-  <h1>ログイン</h1>
-  <input type="text" id="username" placeholder="ユーザー名">
-  <input type="password" id="password" placeholder="パスワード">
-  <button onclick="login()">ログイン</button>
+  <h1>Login</h1>
+  <input type="text" id="username" placeholder="user name">
+  <input type="password" id="password" placeholder="pass word">
+  <button onclick="login()">Login</button>
 </div>
 
 <script>
@@ -63,9 +63,9 @@ function login() {
   var password = document.getElementById("password").value;
 
   // ここでユーザー名とパスワードを検証
-  if (username === "testuser" && password === "testpassword") {
+  if (username === "RIA373" && password === "riachan20") {
     // ログイン成功
-    window.location.href = "https://www.example.com"; // 遷移先URL
+    window.location.href = "https://ria373.github.io/373/index.html"; // 遷移先URL
   } else {
     // ログイン失敗
     alert("ユーザー名またはパスワードが間違っています。");
